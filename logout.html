@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="./materialize/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="icon" href="./img/tab-logo.png" sizes="32x32">
+  <title>EverShop</title>
+</head>
+<body>
+<div class="row">
+    <form class="col s12"
+        method="post" 
+        action="./" 
+        name="myForm"
+        onsubmit="return checkForm()">
+          <h2>Enter password for your account</h2>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="password" 
+          id="password" 
+          type="password" 
+          class="validate"
+          required 
+          maxlength="30" 
+          minlength="8">
+          <span class="helper-text" data-error="Password has to be 8-30 characters long" data-success="OK"></span>
+          <label for="password">Password</label>
+        </div>
+      </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Logout
+  </button>
+</form>
+</div>
+      <script src="./materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="./materialize/js/materialize.js"></script>
+      <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

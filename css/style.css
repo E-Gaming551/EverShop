@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+.social-icons {
+    border: none;
+    background: gray;
+}
+.social-icons a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    border: none;
+}
+.copyright img{
+    cursor: pointer;
+}
+h2.slogan{
+    align-content: center;
+    border: none;
+}
+.reciept-box{
+    border: none;
+}
+p.name{
+    border: none;
+}
