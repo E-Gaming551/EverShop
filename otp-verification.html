@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="./materialize/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="icon" href="./img/tab-logo.png" sizes="32x32">
+  <title>EverShop</title>
+</head>
+<body>
+<div class="row">
+    <form class="col s12"
+        method="post" 
+        action="./home.html" 
+        name="myForm"
+        onsubmit="return checkForm()">
+          <h3>OTP Verification</h3>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="password" 
+          id="password" 
+          type="password" 
+          class="validate"
+          required 
+          maxlength="6" 
+          minlength="6"
+          pattern="023451">
+          <span class="helper-text" data-error="Incorrect OTP!" data-success="OK"></span>
+          <label for="password">OTP</label>
+        </div>
+      </div>
+      <p>Hint of OTP: 023451</p>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Verify</button>&nbsp;<a href="#resend-email-or-phone-number">Resend</a>
+</form>
+</div>
+      <script src="./materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="./materialize/js/materialize.js"></script>
+      <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
